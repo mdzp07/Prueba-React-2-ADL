@@ -1,0 +1,64 @@
+.render-pizzas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.card-pizza{
+    width: 27%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid;
+    border-width: thin;
+    border-color: lightgray;
+}
+
+.card-pizza img{
+    width: 100%;
+}
+
+#pizza-name{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border-bottom: solid;
+    border-bottom-width: thin;
+}
+
+#ingredients{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+#precio{
+    text-align: center;
+    border-top: solid;
+    border-color: lightgray;
+    border-width: thin;
+    padding: 15px;
+}
+
+.Botones{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.boton-ver-mas{
+    border: none;
+    padding: 7px;
+    border-radius: 5%;
+    background-color: rgb(45, 137, 194);
+    color: white;
+}
+
+.boton-añadir{
+    border: none;
+    padding: 7px;
+    border-radius: 5%;
+    background-color: rgb(214, 42, 42);
+    color: white;
+}

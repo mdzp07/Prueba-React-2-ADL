@@ -1,0 +1,36 @@
+.card-detalle{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    margin: auto;
+    gap: 15px;
+    margin-top: 60px;
+    padding-right: 15px;
+    border: solid;
+    border-width: thin;
+    border-color: lightgray;
+}
+
+.card-detalle img{
+    width: 500px;
+    height: 400px;
+}
+
+#formato-desc{
+    font-size: 12pt;
+}
+
+.estilo-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-añadir2{
+    border: none;
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5%;
+    background-color: rgb(214, 42, 42);
+    color: white;
+}

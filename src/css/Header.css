@@ -1,0 +1,18 @@
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('C:\Users\danie\OneDrive\Desktop\FullStack Desafio Latam\Modulo 5 - React II\Prueba-Final-React-2\src\img\ivan-torres-MQUqbmszGGM-unsplash.jpg');
+    background-size: cover;
+    height: 200px;
+
+}
+
+.contenido-header {
+    width: 700px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-color: lightgray;
+}
