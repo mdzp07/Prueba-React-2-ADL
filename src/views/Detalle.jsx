@@ -5,13 +5,16 @@ import '../css/Detalle.css'
 
 export default function Detalle() {
     const { id } = useParams();
-    const { pizzas } = useContext(MyContext);
-    const { setCarrito } = useContext(MyContext);
+    const { pizzas, setCantidad, setCarrito } = useContext(MyContext);
 
     const pizza = pizzas.filter(pizza => pizza.id === id)[0];
 
     const agregarAlCarrito = (pizza) => {
         setCarrito((addCarrito) => [...addCarrito, pizza]);
+        setCantidad((prevCantidad) => ({
+            ...prevCantidad,
+            [pizza]: (prevCantidad[pizza]) + 1,
+        }));
     };
 
     return (
@@ -33,7 +36,6 @@ export default function Detalle() {
                     </section>
                 </section>
             </div>
-        </div>
-    );
+        </div>
+    );
 }
-

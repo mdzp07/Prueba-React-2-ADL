@@ -4,9 +4,10 @@ import { useNavigate } from "react-router-dom";
 import '../css/Menu.css'
 
 export default function Menu() {
-    const { pizzas } = useContext(MyContext);
-    const { setCarrito } = useContext(MyContext);
+    const { pizzas, setCantidad, setCarrito } = useContext(MyContext);
+
     const navigate = useNavigate();
+
 
     const irAPizza = (pizzaId) => {
         navigate(`/${pizzaId}`);
@@ -14,6 +15,10 @@ export default function Menu() {
 
     const agregarAlCarrito = (pizza) => {
         setCarrito((addCarrito) => [...addCarrito, pizza]);
+        setCantidad((prevCantidad) => ({
+            ...prevCantidad,
+            [pizza]: (prevCantidad[pizza] || 0) + 1,
+        }));
     };
 
     return (

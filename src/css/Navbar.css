@@ -1,0 +1,14 @@
+.active {
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-size: 15pt;
+    pointer-events:none;
+
+}
+
+.notActive {
+    color: white;
+    text-decoration: none;
+    font-size: 13pt;
+}
+

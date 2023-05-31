@@ -1,0 +1,45 @@
+.card-cart{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid;
+    border-width: thin;
+}
+
+.card-cart img{
+    width: 70px;
+    height: 70px;
+}
+
+.section-1-card{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.section-2-card{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: green;
+}
+
+.boton-sumar{
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 5%;
+    background-color: rgb(45, 137, 194);
+    color: white;
+}
+
+.boton-restar{
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 5%;
+    background-color: red;
+    color: white;
+}

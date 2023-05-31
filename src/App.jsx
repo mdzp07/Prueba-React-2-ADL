@@ -15,6 +15,8 @@ function App() {
 
   const [pizzas, setPizzas] = useState([]);
   const [carrito, setCarrito] = useState([]);
+  const [cantidad, setCantidad] = useState({});
+  
 
   useEffect(() => {
     setPizzas(pizzasData);
@@ -22,7 +24,7 @@ function App() {
 
   console.log(pizzas);
 
-  const globalState = { pizzas, setPizzas, carrito, setCarrito };
+  const globalState = { pizzas, setPizzas, carrito, setCarrito, cantidad, setCantidad};
 
   return (
     <>
